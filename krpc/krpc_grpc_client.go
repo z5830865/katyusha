@@ -2,7 +2,7 @@
 //
 // This Source Code Form is subject to the terms of the MIT License.
 // If a copy of the MIT was not distributed with this file,
-// You can obtain one at https://github.com/gogf/katyusha.
+// You can obtain one at https://github.com/draco/katyusha.
 
 package krpc
 
@@ -13,7 +13,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/gogf/katyusha/balancer"
+	"github.com/draco/katyusha/balancer"
 )
 
 // DefaultGrpcDialOptions returns the default options for creating grpc client connection.

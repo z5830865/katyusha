@@ -2,14 +2,14 @@
 //
 // This Source Code Form is subject to the terms of the MIT License.
 // If a copy of the MIT was not distributed with this file,
-// You can obtain one at https://github.com/gogf/katyusha.
+// You can obtain one at https://github.com/draco/katyusha.
 
 package krpc
 
 import (
 	"time"
 
-	"github.com/gogf/katyusha/krpc/internal/grpcctx"
+	"github.com/draco/katyusha/krpc/internal/grpcctx"
 )
 
 type (

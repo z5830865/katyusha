@@ -1,10 +1,10 @@
-module github.com/gogf/katyusha
+module github.com/draco/katyusha
 
 go 1.17
 
 require (
-	github.com/gogf/gf/contrib/registry/etcd/v2 v2.1.4
-	github.com/gogf/gf/v2 v2.1.4
+	github.com/gogf/gf/contrib/registry/etcd/v2 v2.4.1
+	github.com/gogf/gf/v2 v2.4.1
 	go.opentelemetry.io/otel v1.10.0
 	go.opentelemetry.io/otel/trace v1.10.0
 	golang.org/x/net v0.0.0-20220919232410-f2f64ebce3c1

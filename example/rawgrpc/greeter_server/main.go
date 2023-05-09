@@ -13,8 +13,8 @@ import (
 	"github.com/gogf/gf/v2/os/gctx"
 	"google.golang.org/grpc"
 
-	pb "github.com/gogf/katyusha/example/rawgrpc/helloworld"
-	"github.com/gogf/katyusha/resolver"
+	pb "github.com/draco/katyusha/example/rawgrpc/helloworld"
+	"github.com/draco/katyusha/resolver"
 )
 
 type server struct {

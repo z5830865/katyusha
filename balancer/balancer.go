@@ -21,10 +21,10 @@ const (
 )
 
 func init() {
-	Register(gsel.SelectorRandom, gsel.NewBuilderRandom())
-	Register(gsel.SelectorWeight, gsel.NewBuilderWeight())
-	Register(gsel.SelectorRoundRobin, gsel.NewBuilderRoundRobin())
-	Register(gsel.SelectorLeastConnection, gsel.NewBuilderLeastConnection())
+	Register(gsel.NewBuilderRandom().Name(), gsel.NewBuilderRandom())
+	Register(gsel.NewBuilderWeight().Name(), gsel.NewBuilderWeight())
+	Register(gsel.NewBuilderRoundRobin().Name(), gsel.NewBuilderRoundRobin())
+	Register(gsel.NewBuilderLeastConnection().Name(), gsel.NewBuilderLeastConnection())
 }
 
 // Register registers the given balancer builder with the given name.
@@ -38,22 +38,22 @@ func Register(name string, builder gsel.Builder) {
 
 // WithRandom returns a grpc.DialOption which enables random load balancing.
 func WithRandom() grpc.DialOption {
-	return doWithSelectorName(gsel.SelectorRandom)
+	return doWithSelectorName(gsel.NewBuilderRandom().Name())
 }
 
 // WithWeight returns a grpc.DialOption which enables weight load balancing.
 func WithWeight() grpc.DialOption {
-	return doWithSelectorName(gsel.SelectorWeight)
+	return doWithSelectorName(gsel.NewBuilderWeight().Name())
 }
 
 // WithRoundRobin returns a grpc.DialOption which enables round-robin load balancing.
 func WithRoundRobin() grpc.DialOption {
-	return doWithSelectorName(gsel.SelectorRoundRobin)
+	return doWithSelectorName(gsel.NewBuilderRoundRobin().Name())
 }
 
 // WithLeastConnection returns a grpc.DialOption which enables the least connection load balancing.
 func WithLeastConnection() grpc.DialOption {
-	return doWithSelectorName(gsel.SelectorLeastConnection)
+	return doWithSelectorName(gsel.NewBuilderLeastConnection().Name())
 }
 
 func doWithSelectorName(name string) grpc.DialOption {

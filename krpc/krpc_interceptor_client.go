@@ -2,7 +2,7 @@
 //
 // This Source Code Form is subject to the terms of the MIT License.
 // If a copy of the MIT was not distributed with this file,
-// You can obtain one at https://github.com/gogf/katyusha.
+// You can obtain one at https://github.com/draco/katyusha.
 
 package krpc
 
@@ -14,7 +14,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/status"
 
-	"github.com/gogf/katyusha/krpc/internal/grpctracing"
+	"github.com/draco/katyusha/krpc/internal/grpctracing"
 )
 
 // UnaryError handles the error types converting between grpc and gerror.

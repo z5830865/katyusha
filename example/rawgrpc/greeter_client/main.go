@@ -11,9 +11,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/gogf/katyusha/balancer"
-	pb "github.com/gogf/katyusha/example/rawgrpc/helloworld"
-	"github.com/gogf/katyusha/resolver"
+	"github.com/draco/katyusha/balancer"
+	pb "github.com/draco/katyusha/example/rawgrpc/helloworld"
+	"github.com/draco/katyusha/resolver"
 )
 
 func main() {

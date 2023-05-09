@@ -2,7 +2,7 @@
 //
 // This Source Code Form is subject to the terms of the MIT License.
 // If a copy of the MIT was not distributed with this file,
-// You can obtain one at https://github.com/gogf/katyusha.
+// You can obtain one at https://github.com/draco/katyusha.
 
 package grpctracing
 
@@ -21,9 +21,9 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/gogf/katyusha"
-	"github.com/gogf/katyusha/krpc/internal/grpcctx"
-	"github.com/gogf/katyusha/krpc/internal/grpcutils"
+	"github.com/draco/katyusha"
+	"github.com/draco/katyusha/krpc/internal/grpcctx"
+	"github.com/draco/katyusha/krpc/internal/grpcutils"
 )
 
 // UnaryServerInterceptor returns a grpc.UnaryServerInterceptor suitable

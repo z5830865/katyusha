@@ -2,7 +2,7 @@
 //
 // This Source Code Form is subject to the terms of the MIT License.
 // If a copy of the MIT was not distributed with this file,
-// You can obtain one at https://github.com/gogf/katyusha.
+// You can obtain one at https://github.com/draco/katyusha.
 
 // opentelemetry-go-contrib/instrumentation/google.golang.org/grpc/otelgrpc/interceptor.go
 
@@ -25,8 +25,8 @@ const (
 
 const (
 	tracingMaxContentLogSize         = 256 * 1024 // Max log size for request and response body.
-	tracingInstrumentGrpcClient      = "github.com/gogf/katyusha/krpc.GrpcClient"
-	tracingInstrumentGrpcServer      = "github.com/gogf/katyusha/krpc.GrpcServer"
+	tracingInstrumentGrpcClient      = "github.com/draco/katyusha/krpc.GrpcClient"
+	tracingInstrumentGrpcServer      = "github.com/draco/katyusha/krpc.GrpcServer"
 	tracingEventGrpcRequest          = "grpc.request"
 	tracingEventGrpcRequestMessage   = "grpc.request.message"
 	tracingEventGrpcRequestBaggage   = "grpc.request.baggage"

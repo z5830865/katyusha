@@ -3,7 +3,7 @@ package protobuf
 import (
 	"google.golang.org/grpc"
 
-	"github.com/gogf/katyusha/krpc"
+	"github.com/draco/katyusha/krpc"
 )
 
 const (
